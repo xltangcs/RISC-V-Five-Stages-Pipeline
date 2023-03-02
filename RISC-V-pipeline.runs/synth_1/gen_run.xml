@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1677743205" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/param.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/param.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/alu/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/alu/ALU.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ALUope.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/ALUope.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BHT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/pc/BHT.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/BUS/BUS.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BranchPredictor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/pc/BranchPredictor.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/alu/COMP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/alu/COMP.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/CTRL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/CTRL.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/EX.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/EX_IF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/EX_IF.v"/>
+        <Attr Name="ImportTime" Val="1658229126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ForwardingUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/ForwardingUnit.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/ID.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/IF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/IF.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/InstDivider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/ctrl/InstDivider.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/MEM.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/pc/NPC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/pc/NPC.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/pc/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/pc/PC.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/combine/WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/combine/WB.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/buffer/buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/buffer/buffer.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/mem/dataMem.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/clk/deviceCLK.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/alu/immGen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/alu/immGen.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v"/>
+        <Attr Name="ImportTime" Val="1658229126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v"/>
+        <Attr Name="ImportTime" Val="1658229126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/mem/instMem.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/miniRV.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/miniRV.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v"/>
+        <Attr Name="ImportTime" Val="1658229126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v"/>
+        <Attr Name="ImportTime" Val="1658229126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/basic/mem/regFIle.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/risc-v-cpu-pipeline/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../risc-v-cpu-pipeline/top.v"/>
+        <Attr Name="ImportTime" Val="1677220353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RISC-V/Test/load_store/load_store.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RISC-V/Test/UJ_format/UJ_format.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/RISC-V.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
+  <BlockFileSet Type="BlockSrcs" Name="inst_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="data_mem"/>
+</GenRun>

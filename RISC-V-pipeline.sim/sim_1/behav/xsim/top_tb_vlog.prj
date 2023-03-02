@@ -1,0 +1,52 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RISC-V-pipeline.gen/sources_1/ip/cpuclk" \
+"../../../../RISC-V-pipeline.gen/sources_1/ip/data_mem/sim/data_mem.v" \
+"../../../../RISC-V-pipeline.gen/sources_1/ip/inst_mem/sim/inst_mem.v" \
+"../../../../RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" \
+"../../../../RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/ALU.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ALUope.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BHT.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BranchPredictor.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/COMP.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/CTRL.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_IF.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_MEM.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ForwardingUnit.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/ID.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/ID_EX.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/IF.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/IF_ID.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/InstDivider.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM_WB.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/NPC.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/PC.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/WB.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/buffer/buffer.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/immGen.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v" \
+"../../../../RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v" \
+"../../../../RISC-V-pipeline.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

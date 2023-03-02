@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Mar  1 21:58:07 2023
+# Process ID: 21016
+# Current directory: D:/Desktop/RISC-V-pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7864 D:\Desktop\RISC-V-pipeline\RISC-V-pipeline.xpr
+# Log file: D:/Desktop/RISC-V-pipeline/vivado.log
+# Journal file: D:/Desktop/RISC-V-pipeline\vivado.jou
+# Running On: DESKTOP-FELKDMR, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 16914 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+launch_simulation
+source top_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst}} 
+current_wave_config {Untitled 1}
+add_wave {{/top_tb/u_top/mini_rv_u/If/pc}} 
+current_wave_config {Untitled 1}
+add_wave {{/top_tb/u_top/bus/data}} 
+current_wave_config {Untitled 1}
+add_wave {{/top_tb/u_top/mini_rv_u/mem_wd}} 
+current_wave_config {Untitled 1}
+add_wave {{/top_tb/u_top/mini_rv_u/Id/regFile/rf}} 
+relaunch_sim
+run all
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_sim
+launch_simulation
+source top_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst_ID}} 
+current_wave_config {Untitled 2}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst}} 
+current_wave_config {Untitled 2}
+add_wave {{/top_tb/u_top/mini_rv_u/If/pc}} 
+current_wave_config {Untitled 2}
+add_wave {{/top_tb/u_top/bus/data}} 
+run all
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+source top_tb.tcl
+run all
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/interface_numled/ledDisplayCtrl/num_in}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/data}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/interface_numled/data}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/interface_numled/ledDisplayCtrl/num_in}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst_ID}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/mini_rv_u/Id/regFile/rf}} 
+run all
+relaunch_sim
+run all
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/interface_numled/data_input}} 
+current_wave_config {Untitled 3}
+add_wave {{/top_tb/u_top/bus/interface_numled/input_data}} 
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+source top_tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/mini_rv_u/If/pc}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/mini_rv_u/If/inst}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/mini_rv_u/Id/regFile}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/bus/interface_numled/data}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/bus/interface_numled/data_input}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/bus/interface_numled/input_data}} 
+current_wave_config {Untitled 4}
+add_wave {{/top_tb/u_top/bus/interface_numled/ledDisplayCtrl/num_in}} 
+relaunch_sim
+run all
+run all
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim

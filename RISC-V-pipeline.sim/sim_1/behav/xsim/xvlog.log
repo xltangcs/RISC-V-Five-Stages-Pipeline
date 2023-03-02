@@ -1,0 +1,88 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/data_mem/sim/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/inst_mem/sim/inst_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ALUope.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUope
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BHT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchCTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/BranchPredictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPredictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/COMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ExceptionCTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/InstDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/buffer/buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DeviceCLK
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InputCtrl_LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InputCtrl_NUMLED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InputCtrl_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interface_LED_SWITCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interface_NUMLED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interface_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mini_rv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OutputCtrl_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OutputCtrl_Switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
