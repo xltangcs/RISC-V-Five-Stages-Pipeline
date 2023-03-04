@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -81,7 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.cache/wt [current_project]
 set_property parent.project_path D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.cache/ip [current_project]
@@ -119,19 +118,21 @@ read_verilog -library xil_defaultlib {
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/alu/immGen.v
-  D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v
-  D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v
-  D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v
   D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v
 }
+read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/FIFO_data/FIFO_data.xci
+set_property used_in_implementation false [get_files -all d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/FIFO_data/FIFO_data.xdc]
+set_property used_in_implementation false [get_files -all d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/FIFO_data/FIFO_data_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/FIFO_data/FIFO_data_ooc.xdc]
+
 read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci
 set_property used_in_implementation false [get_files -all d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk_board.xdc]
 set_property used_in_implementation false [get_files -all d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk.xdc]
@@ -155,6 +156,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/constrs_1/new/RISC-V.xdc
 set_property used_in_implementation false [get_files D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/constrs_1/new/RISC-V.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/utils_1/imports/synth_1/top.dcp

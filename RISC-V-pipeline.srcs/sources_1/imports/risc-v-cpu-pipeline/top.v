@@ -1,19 +1,18 @@
 `include "param.v"
 
 module top(
-           input    wire clk,
-           input    wire rst,
-           input    wire [`DEVICE_NUM_SWITCH - 1: 0]        switch,// 输入设备——拨码开关
-           output   wire [`DEVICE_NUM_LED - 1: 0]           led,// 输出设备——LED灯
-           output   wire [`DEVICE_NUM_NUMLED_EN - 1: 0]     led_en,// 输出设备——LED数码管
-           output   wire               led_ca,
-           output   wire               led_cb,
-           output   wire               led_cc,
-           output   wire               led_cd,
-           output   wire               led_ce,
-           output   wire               led_cf,
-           output   wire               led_cg,
-           output   wire               led_dp
+           input    wire                clk,
+           input    wire                rst,
+           input    wire                switch,
+           output   wire    [7 : 0]     led_en,// 输出设备——LED数码管
+           output   wire                led_ca,
+           output   wire                led_cb,
+           output   wire                led_cc,
+           output   wire                led_cd,
+           output   wire                led_ce,
+           output   wire                led_cf,
+           output   wire                led_cg,
+           output   wire                led_dp
        );
        
 
@@ -64,7 +63,6 @@ BUS bus (
         .rst_n(rst_n),
         // 设备线连接
         .switch(switch),
-        .led(led),
         .led_en(led_en),
         .led_ca(led_ca),
         .led_cb(led_cb),

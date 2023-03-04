@@ -1,37 +1,30 @@
-`ifdef DEBUG
-    `include "param.v"
-`else
-`include "../../param.v"
-`endif
-
 module BUS (
-           input       wire clk,
-           input       wire rst_n,
-           input       wire BC, // 总线查询
-           input       wire [`IO_BUS_WIDTH_ADDR - 1: 0] addr,
-           input       wire [`IO_BUS_WIDTH_CTRL - 1: 0] ctrl,
-           inout       wire [`IO_BUS_WIDTH_DATA - 1: 0] data,
-
-           // 设备线====================================================
-           // 输入设备——拨码开关
-           input    wire [`DEVICE_NUM_SWITCH - 1: 0]        switch,
-           // 输出设备——LED灯
-           output   wire [`DEVICE_NUM_LED - 1: 0]           led,
-           // 输出设备——LED数码管
-           output   wire [`DEVICE_NUM_NUMLED_EN - 1: 0]     led_en,
-           output   wire               led_ca,
-           output   wire               led_cb,
-           output   wire               led_cc,
-           output   wire               led_cd,
-           output   wire               led_ce,
-           output   wire               led_cf,
-           output   wire               led_cg,
-           output   wire               led_dp
+           input       wire                 clk,
+           input       wire                 rst_n,
+           input       wire                 BC, // 总线查询
+           input       wire     [31 : 0]    addr,
+           input       wire                 ctrl,
+           inout       wire     [31 : 0]    data,
+           
+           input       wire                 switch,// 输入设备--拨码开关
+           output      wire     [7  : 0]    led_en,// 输出设备--LED数码管
+           output      wire                 led_ca,
+           output      wire                 led_cb,
+           output      wire                 led_cc,
+           output      wire                 led_cd,
+           output      wire                 led_ce,
+           output      wire                 led_cf,
+           output      wire                 led_cg,
+           output      wire                 led_dp
        );
+
+wire    [31 : 0]    data_out;
+//wire     [9  : 0]    rd_data_count = 0;
+//wire     [9  : 0]    wr_data_count = 0;
 
 integer i;
 
-reg [`IO_INTERFACE_NUM - 1: 0]  BG;    // 总线同意
+reg [2 : 0]  BG;    // 总线同意
 
 /***************************************************************
                         外设时钟
@@ -39,29 +32,28 @@ reg [`IO_INTERFACE_NUM - 1: 0]  BG;    // 总线同意
 
 wire deviceClk;
 
-// 50000 约等于 2ms 多一点 
-DeviceCLK  #(.EXTEND(100)) 
-           deviceCLK (
+DeviceCLK  deviceCLK (
                .clk(clk),
                .rst_n(rst_n),
+               .switch(switch),
                .clk_out(deviceClk)
            );
 
 /***************************************************************
                         设备控制
 ****************************************************************/
-reg [`IO_BUS_WIDTH_CTRL - 1: 0] ctrl_input [`IO_INTERFACE_NUM - 1 : 0];
+reg ctrl_input [2 : 0];
 
 // 控制线
 always @(*) begin
-    for (i = 0; i < `IO_INTERFACE_NUM; i = i + 1) begin
-        ctrl_input[i][`IO_BUS_WIDTH_CTRL - 1: 0] =  ctrl;
+    for (i = 0; i < 3; i = i + 1) begin
+        ctrl_input[i] =  ctrl;
     end
 end
 
 // 总线同意信号
 always @(*) begin
-    if (addr[`IO_BUS_WIDTH_ADDR - 1: 12] == 20'hFFFFF) begin // 外设
+    if (addr[31 : 12] == 20'hFFFFF) begin // 外设
         case (addr[7: 4])
             4'h0: begin
                 BG = 3'b010;
@@ -98,6 +90,18 @@ Interface_RAM interface_RAM (
                   .data(data)
               );
 
+FIFO_data FIFO (
+                    .wr_clk(clk),                // input wire wr_clk
+                    .rd_clk(clk),                // input wire rd_clk
+                    .din(data),                      // input wire [31 : 0] din
+                    .wr_en(1'b1),                  // input wire wr_en
+                    .rd_en(deviceClk),                  // input wire rd_en
+                    .dout(data_out),                    // output wire [31 : 0] dout
+                    
+                    .rd_data_count(rd_data_count),  // output wire [9 : 0] rd_data_count
+                    .wr_data_count(wr_data_count)  // output wire [9 : 0] wr_data_count
+);
+
 Interface_NUMLED interface_numled (
                               .clk(clk),
                               .deviceClk(deviceClk),
@@ -105,7 +109,7 @@ Interface_NUMLED interface_numled (
                               .BG(BG[1]),
                               .addr(addr),
                               .ctrl(ctrl_input[1]),
-                              .data(data),
+                              .data(data_out),
                               .led_en(led_en),
                               .led_ca(led_ca),
                               .led_cb(led_cb),
@@ -116,18 +120,5 @@ Interface_NUMLED interface_numled (
                               .led_cg(led_cg),
                               .led_dp(led_dp)
                           );
-                          
-Interface_LED_SWITCH interface_led_switch (
-                         .clk(clk),
-                         .deviceClk(deviceClk),
-                         .rst_n(rst_n),
-                         .BG(BG[2]),
-                         .addr(addr),
-                         .ctrl(ctrl_input[2]),
-                         .data(data),
-
-                         .led(led),
-                         .switch(switch)
-                     );
 
 endmodule

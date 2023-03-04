@@ -1,8 +1,5 @@
-`ifdef DEBUG
-    `include "param.v"
-`else
-    `include "../param.v"
-`endif
+`include "../param.v"
+
 
 
 module MEM (

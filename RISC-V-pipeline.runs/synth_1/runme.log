@@ -22,17 +22,19 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14736
+INFO: [Synth 8-7075] Helper process launched with PID 10232
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Vivado2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:28]
+INFO: [Synth 8-11241] undeclared symbol 'rd_data_count', assumed default net type 'wire' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:101]
+INFO: [Synth 8-11241] undeclared symbol 'wr_data_count', assumed default net type 'wire' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:102]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:27]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.652 ; gain = 408.656
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.258 ; gain = 408.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/cpuclk_stub.v:5]
-WARNING: [Synth 8-7071] port 'reset' of module 'cpuclk' is unconnected for instance 'cpuClk' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:26]
-WARNING: [Synth 8-7023] instance 'cpuClk' of module 'cpuclk' has 4 connections declared, but only 3 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/cpuclk_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset' of module 'cpuclk' is unconnected for instance 'cpuClk' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:25]
+WARNING: [Synth 8-7023] instance 'cpuClk' of module 'cpuclk' has 4 connections declared, but only 3 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:25]
 INFO: [Synth 8-6157] synthesizing module 'mini_rv' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:3]
 INFO: [Synth 8-6157] synthesizing module 'IF' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/IF.v:7]
 INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/NPC.v:7]
@@ -44,8 +46,8 @@ INFO: [Synth 8-6155] done synthesizing module 'NPC' (0#1) [D:/Desktop/RISC-V-pip
 INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/PC.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/pc/PC.v:7]
 INFO: [Synth 8-6157] synthesizing module 'InstMem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v:1]
-INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/inst_mem_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/inst_mem_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/inst_mem_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/inst_mem_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'InstMem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/instMem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'BranchCTRL' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'BranchCTRL' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/BranchCTRL.v:7]
@@ -60,8 +62,8 @@ INFO: [Synth 8-6157] synthesizing module 'CTRL' [D:/Desktop/RISC-V-pipeline/RISC
 INFO: [Synth 8-6157] synthesizing module 'ALUope' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ALUope.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'ALUope' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ALUope.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'CTRL' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/CTRL.v:7]
-WARNING: [Synth 8-7071] port 'inst_div' of module 'CTRL' is unconnected for instance 'ctrl_INSTDIV' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:166]
-WARNING: [Synth 8-7023] instance 'ctrl_INSTDIV' of module 'CTRL' has 18 connections declared, but only 17 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:166]
+WARNING: [Synth 8-7071] port 'inst_div' of module 'CTRL' is unconnected for instance 'ctrl_INSTDIV' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:167]
+WARNING: [Synth 8-7023] instance 'ctrl_INSTDIV' of module 'CTRL' has 18 connections declared, but only 17 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:167]
 INFO: [Synth 8-6157] synthesizing module 'ID' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/ID.v:1]
 INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/regFIle.v:7]
@@ -78,8 +80,8 @@ INFO: [Synth 8-6155] done synthesizing module 'COMP' (0#1) [D:/Desktop/RISC-V-pi
 INFO: [Synth 8-6155] done synthesizing module 'EX' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX.v:7]
 INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_MEM.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/EX_MEM.v:7]
-INFO: [Synth 8-6157] synthesizing module 'MEM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'MEM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v:8]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM.v:5]
 INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM_WB.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/MEM_WB.v:7]
 INFO: [Synth 8-6157] synthesizing module 'WB' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/combine/WB.v:7]
@@ -89,20 +91,26 @@ INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [D:/Desktop
 INFO: [Synth 8-6157] synthesizing module 'ExceptionCTRL' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v:15]
 INFO: [Synth 8-6155] done synthesizing module 'ExceptionCTRL' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/ctrl/ExceptionCTRL.v:15]
 INFO: [Synth 8-6155] done synthesizing module 'mini_rv' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/miniRV.v:3]
-INFO: [Synth 8-6157] synthesizing module 'BUS' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:7]
-INFO: [Synth 8-6157] synthesizing module 'DeviceCLK' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v:6]
-	Parameter EXTEND bound to: 100 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'DeviceCLK' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v:6]
+INFO: [Synth 8-6157] synthesizing module 'BUS' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DeviceCLK' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DeviceCLK' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/clk/deviceCLK.v:2]
 INFO: [Synth 8-6157] synthesizing module 'Interface_RAM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v:13]
 INFO: [Synth 8-6157] synthesizing module 'InputCtrl_RAM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'InputCtrl_RAM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/inputCtrl_RAM.v:1]
 INFO: [Synth 8-6157] synthesizing module 'OutputCtrl_RAM' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'OutputCtrl_RAM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/outputCtrl_RAM.v:1]
 INFO: [Synth 8-6157] synthesizing module 'DataMem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v:1]
-INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/data_mem_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9292-DESKTOP-FELKDMR/realtime/data_mem_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/data_mem_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/data_mem_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'DataMem' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/basic/mem/dataMem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'Interface_RAM' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_RAM/interface_RAM.v:13]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_data' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/FIFO_data_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_data' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/.Xil/Vivado-9496-DESKTOP-FELKDMR/realtime/FIFO_data_stub.v:5]
+WARNING: [Synth 8-689] width (1) of port connection 'rd_data_count' does not match port width (10) of module 'FIFO_data' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:101]
+WARNING: [Synth 8-689] width (1) of port connection 'wr_data_count' does not match port width (10) of module 'FIFO_data' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:102]
+WARNING: [Synth 8-7071] port 'full' of module 'FIFO_data' is unconnected for instance 'FIFO' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:93]
+WARNING: [Synth 8-7071] port 'empty' of module 'FIFO_data' is unconnected for instance 'FIFO' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:93]
+WARNING: [Synth 8-7023] instance 'FIFO' of module 'FIFO_data' has 10 connections declared, but only 8 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:93]
 INFO: [Synth 8-6157] synthesizing module 'Interface_NUMLED' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v:7]
 INFO: [Synth 8-6157] synthesizing module 'Buffer' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/buffer/buffer.v:6]
 	Parameter WIDTH bound to: 32 - type: integer 
@@ -110,65 +118,10 @@ INFO: [Synth 8-6155] done synthesizing module 'Buffer' (0#1) [D:/Desktop/RISC-V-
 INFO: [Synth 8-6157] synthesizing module 'InputCtrl_NUMLED' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'InputCtrl_NUMLED' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/inputCtrl_NUMLED.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'Interface_NUMLED' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_NUMLED/interface_NUMLED.v:7]
-INFO: [Synth 8-6157] synthesizing module 'Interface_LED_SWITCH' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v:7]
-INFO: [Synth 8-6157] synthesizing module 'InputCtrl_LED' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'InputCtrl_LED' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/inputCtrl_LED.v:7]
-INFO: [Synth 8-6157] synthesizing module 'OutputCtrl_Switch' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'OutputCtrl_Switch' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/outputCtrl_Switch.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'Interface_LED_SWITCH' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/interface_LED_SWITCH/interface_LED_SWITCH.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'BUS' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:7]
-WARNING: [Synth 8-7071] port 'BC' of module 'BUS' is unconnected for instance 'bus' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:62]
-WARNING: [Synth 8-7023] instance 'bus' of module 'BUS' has 17 connections declared, but only 16 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'BUS' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/IO/BUS/BUS.v:1]
+WARNING: [Synth 8-7071] port 'BC' of module 'BUS' is unconnected for instance 'bus' [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:61]
+WARNING: [Synth 8-7023] instance 'bus' of module 'BUS' has 16 connections declared, but only 15 given [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:61]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/imports/risc-v-cpu-pipeline/top.v:3]
-WARNING: [Synth 8-7129] Port num_in[31] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[30] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[29] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[28] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[27] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[26] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[25] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[24] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[23] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[22] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[21] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[20] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[19] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[18] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[17] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port num_in[16] in module InputCtrl_LED is either unconnected or has no load
-WARNING: [Synth 8-7129] Port deviceClk in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[31] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[30] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[29] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[28] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[27] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[26] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[25] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[24] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[23] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[22] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[21] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[20] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[19] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[18] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[17] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[16] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[15] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[14] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[13] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[12] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[11] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[10] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[9] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[8] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[7] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[6] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[5] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[4] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[3] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[2] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[1] in module Interface_LED_SWITCH is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr[0] in module Interface_LED_SWITCH is either unconnected or has no load
 WARNING: [Synth 8-7129] Port deviceClk in module Interface_NUMLED is either unconnected or has no load
 WARNING: [Synth 8-7129] Port BG in module Interface_NUMLED is either unconnected or has no load
 WARNING: [Synth 8-7129] Port addr[31] in module Interface_NUMLED is either unconnected or has no load
@@ -220,24 +173,75 @@ WARNING: [Synth 8-7129] Port adr[19] in module DataMem is either unconnected or 
 WARNING: [Synth 8-7129] Port adr[18] in module DataMem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adr[17] in module DataMem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adr[16] in module DataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adr[1] in module DataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adr[0] in module DataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module Interface_RAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC in module BUS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[6] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[4] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[3] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[2] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[1] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[0] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port opecode[1] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port opecode[0] in module ALUope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[26] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[25] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[24] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[23] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[22] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[21] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[20] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[13] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[12] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[6] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[5] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[4] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[3] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[2] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[1] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_in[0] in module InstDivider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module InstMem is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.527 ; gain = 551.531
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1380.188 ; gain = 554.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.527 ; gain = 551.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1380.188 ; gain = 554.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.527 ; gain = 551.531
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1380.188 ; gain = 554.453
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.181 . Memory (MB): peak = 1375.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 1380.188 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/FIFO_data/FIFO_data/FIFO_data_in_context.xdc] for cell 'bus/FIFO'
+Finished Parsing XDC File [d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/FIFO_data/FIFO_data/FIFO_data_in_context.xdc] for cell 'bus/FIFO'
 Parsing XDC File [d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'cpuClk'
 Finished Parsing XDC File [d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'cpuClk'
 Parsing XDC File [d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/inst_mem/inst_mem/inst_mem_in_context.xdc] for cell 'mini_rv_u/If/IF_irom/irom'
@@ -248,39 +252,42 @@ Parsing XDC File [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/constrs_1/new/
 Finished Parsing XDC File [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/constrs_1/new/RISC-V.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/constrs_1/new/RISC-V.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1487.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1451.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1487.754 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1451.754 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Vivado2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/Desktop/RISC-V-pipeline/RISC-V-pipeline.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for bus/FIFO. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cpuClk. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mini_rv_u/If/IF_irom/irom. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for bus/interface_RAM/dRAM/RAM. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -289,19 +296,17 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   33 Bit       Adders := 1     
 	   2 Input   32 Bit       Adders := 2     
-	   2 Input    8 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 128   
-	               32 Bit    Registers := 51    
-	                8 Bit    Registers := 2     
-	                5 Bit    Registers := 4     
+	               32 Bit    Registers := 49    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 9     
-	                1 Bit    Registers := 19    
+	                1 Bit    Registers := 21    
 +---Muxes : 
 	   2 Input   40 Bit        Muxes := 256   
 	   2 Input   33 Bit        Muxes := 1     
@@ -310,7 +315,7 @@ Detailed RTL Component Info :
 	   2 Input   30 Bit        Muxes := 128   
 	   2 Input   24 Bit        Muxes := 4     
 	   2 Input   16 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 4     
 	   8 Input    8 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 128   
 	   7 Input    6 Bit        Muxes := 2     
@@ -343,25 +348,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -380,37 +385,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module cpuClk has unconnected pin reset
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -420,56 +425,58 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |cpuclk        |         1|
+|1     |FIFO_data     |         1|
 |2     |data_mem      |         1|
-|3     |inst_mem      |         1|
+|3     |cpuclk        |         1|
+|4     |inst_mem      |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |cpuclk   |     1|
-|2     |data_mem |     1|
-|3     |inst_mem |     1|
-|4     |CARRY4   |    31|
-|5     |LUT1     |     4|
-|6     |LUT2     |   256|
-|7     |LUT3     |   289|
-|8     |LUT4     |   287|
-|9     |LUT5     |   553|
-|10    |LUT6     |  2412|
-|11    |MUXF7    |   798|
-|12    |MUXF8    |   216|
-|13    |FDCE     |  1754|
-|14    |FDPE     |   286|
-|15    |FDRE     |  3886|
-|16    |FDSE     |    21|
-|17    |IBUF     |    17|
-|18    |OBUF     |    32|
-+------+---------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |FIFO_data |     1|
+|2     |cpuclk    |     1|
+|3     |data_mem  |     1|
+|4     |inst_mem  |     1|
+|5     |CARRY4    |    34|
+|6     |LUT1      |     5|
+|7     |LUT2      |   256|
+|8     |LUT3      |   288|
+|9     |LUT4      |   302|
+|10    |LUT5      |   550|
+|11    |LUT6      |  2396|
+|12    |MUXF7     |   798|
+|13    |MUXF8     |   216|
+|14    |FDCE      |  1731|
+|15    |FDPE      |   286|
+|16    |FDRE      |  3886|
+|17    |FDSE      |    21|
+|18    |IBUF      |     2|
+|19    |OBUF      |    16|
++------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1451.754 ; gain = 626.020
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 1487.754 ; gain = 551.531
-Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1487.754 ; gain = 663.758
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1451.754 ; gain = 554.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1451.754 ; gain = 626.020
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1487.754 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1045 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1451.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1048 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1487.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1451.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: a135c476
+Synth Design complete, checksum: 396f7be2
 INFO: [Common 17-83] Releasing license: Synthesis
-109 Infos, 107 Warnings, 1 Critical Warnings and 0 Errors encountered.
+107 Infos, 112 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1487.754 ; gain = 1059.250
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1451.754 ; gain = 1022.965
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  2 15:48:02 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  4 16:38:24 2023...

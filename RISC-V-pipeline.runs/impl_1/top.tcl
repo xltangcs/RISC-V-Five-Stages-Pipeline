@@ -123,7 +123,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
@@ -134,10 +133,11 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.xpr [current_project]
   set_property ip_output_repo D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.runs/synth_1/top.dcp
+  read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/FIFO_data/FIFO_data.xci
   read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci
   read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/inst_mem/inst_mem.xci
   read_ip -quiet D:/Desktop/RISC-V-pipeline/RISC-V-pipeline.srcs/sources_1/ip/data_mem/data_mem.xci
@@ -307,7 +307,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi top.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
